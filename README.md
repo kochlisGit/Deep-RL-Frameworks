@@ -32,3 +32,8 @@ RLlib is an open-source library for reinforcement learning (RL), offering suppor
 - Curiosity 
 
 More info about the algorithms can be found here: https://docs.ray.io/en/latest/rllib-algorithms.html
+
+# Future Work
+1. Add frameworks: Google Dopamine, ACME.
+2. Add more algorithms.
+3. Add invalid action handling on custom environments.
