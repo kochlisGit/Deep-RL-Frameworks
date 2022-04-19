@@ -1,4 +1,4 @@
-from wrapper import MultiInputPyEnvironment
+from environment import MultiInputPyEnvironment
 from tensorflow_addons.optimizers import Yogi
 from tensorflow.keras.optimizers.schedules import PolynomialDecay
 from tensorflow.keras.losses import Huber
