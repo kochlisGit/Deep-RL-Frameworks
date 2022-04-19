@@ -22,11 +22,15 @@ eval_env = TFPyEnvironment(environment=MultiInputPyEnvironment())
 
 # 2. Constructing the QNetwork. The target network is automatically created.
 conv_layers = None
-fc_layers = [128]
+fc_layers = [32]
+
+left_obs_model = tf.keras.models.Sequential(
+    layers=[tf.keras.layers.Dense(units=8, activation='relu'), tf.keras.layers.Dense(units=8, activation='relu')]
+)
 
 preprocessing_layers = {
-    'left_observation': tf.keras.layers.Dense(units=128),
-    'right_observation': tf.keras.layers.Dense(units=128)
+    'left_observation': left_obs_model,
+    'right_observation': tf.keras.layers.Dense(units=32, activation='relu')
 }
 
 online_q_net = QNetwork(
