@@ -29,7 +29,6 @@ RLlib is an open-source library for reinforcement learning (RL), offering suppor
 - PPO/APPO
 - AlphaZero
 - Model-Based Meta-Policy-Optimization (MBMPO)
-- Curiosity 
 
 More info about the algorithms can be found here: https://docs.ray.io/en/latest/rllib-algorithms.html
 
